@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proov-practice-sales-assistant"
+version = "0.3.0"
+description = "Practice sales assistant (build v0.3) from the ProoV project AI Agent Security. Fictional data only."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["assistant"]
+
+# The test settings. Leave them as they are, like the tests themselves.
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
